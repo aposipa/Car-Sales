@@ -40,7 +40,7 @@ export const carReducer = (state = initialState, action) => {
                         item => item.id !== action.payload.id
                     )
                 },
-                additionalFeatures: [...state.additionalFeatures, action.payload]
+                additionalFeatures: [...state.additionalFeatures]
             };
             default:
                 return state;
